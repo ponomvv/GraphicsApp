@@ -8,25 +8,18 @@
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="grid">
-        <StackPanel x:Name="stackPanel">
-            <Button x:Name="myButton"
-                    Background="Silver"
-                    Foreground="Black"
-                    Content="Hello"
-                    Opacity="0.3"
-                    Margin="10" />
-
-            <Button x:Name="myButton1"
-                    Content="HELLO"
-                    Margin="10">
-                <Button.Background>
-                    <SolidColorBrush Color="Sienna" />
-                </Button.Background>
-                <Button.Foreground>
-                    <SolidColorBrush Color="Black" />
-                </Button.Foreground>
-            </Button>
-        </StackPanel>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Волк.jpg" />
+        </Grid.Background>
+        <Button x:Name="myButton"
+                Content="Hello"
+                HorizontalAlignment="Center"
+                Height="50"
+                Width="80">
+            <Button.Background>
+                <SolidColorBrush Color="Silver"
+                                 Opacity="0.7" />
+            </Button.Background>
+        </Button>
     </Grid>
 </Page>

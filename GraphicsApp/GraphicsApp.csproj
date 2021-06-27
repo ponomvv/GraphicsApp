@@ -130,6 +130,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Волк.jpg" />
+    <Content Include="Assets\Енот.jpg" />
+    <Content Include="Assets\Жираф1.jpg" />
+    <Content Include="Assets\Лиса.jpg" />
+    <Content Include="Assets\Медведь.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

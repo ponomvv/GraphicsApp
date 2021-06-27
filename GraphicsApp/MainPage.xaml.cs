@@ -17,23 +17,24 @@ using Windows.UI;
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x419
 
 namespace GraphicsApp
-{
+    {
     /// <summary>
     /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
     /// </summary>
-    public sealed partial class MainPage : Page
-    {
-        public MainPage()
+    public sealed partial class MainPage: Page
         {
-            //Цвет кнопки с помощью кода
+        public MainPage()
+            {
+
             this.InitializeComponent();
-            Button myButton2 = new Button();
-            Color redColor = Color.FromArgb(255, 255, 0, 0);
-            SolidColorBrush buttonBrush = new SolidColorBrush(redColor);
-            myButton2.Content = "HELLO2";
-            myButton2.Margin = new Thickness(10);
-            myButton2.Background = buttonBrush;
-            stackPanel.Children.Add(myButton2);
+            ////Цвет кнопки с помощью кода
+            //Button myButton2 = new Button();
+            //Color redColor = Color.FromArgb(255, 255, 0, 0);
+            //SolidColorBrush buttonBrush = new SolidColorBrush(redColor);
+            //myButton2.Content = "HELLO2";
+            //myButton2.Margin = new Thickness(10);
+            //myButton2.Background = buttonBrush;
+            //stackPanel.Children.Add(myButton2);
+            }
         }
     }
-}
