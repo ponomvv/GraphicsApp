@@ -7,18 +7,22 @@
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="grid">
-        <Grid.Background>
-            <ImageBrush ImageSource="Assets/Волк.jpg" />
-        </Grid.Background>
-        <Button x:Name="myButton"
-                Content="Hello"
-                HorizontalAlignment="Center"
-                Height="50"
-                Width="80">
+    <Grid x:Name="grid" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <WebView x:Name="webView1"
+                 Source="http://msdn.com" />
+
+        <Button Height="300"
+                Width="490"
+                Grid.Row="1"
+                HorizontalAlignment="Center">
             <Button.Background>
-                <SolidColorBrush Color="Silver"
-                                 Opacity="0.7" />
+                <WebViewBrush x:Name="webBrush"
+                              SourceName="webView1" />
             </Button.Background>
         </Button>
     </Grid>

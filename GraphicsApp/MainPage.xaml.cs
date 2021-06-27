@@ -25,16 +25,12 @@ namespace GraphicsApp
         {
         public MainPage()
             {
-
             this.InitializeComponent();
-            ////Цвет кнопки с помощью кода
-            //Button myButton2 = new Button();
-            //Color redColor = Color.FromArgb(255, 255, 0, 0);
-            //SolidColorBrush buttonBrush = new SolidColorBrush(redColor);
-            //myButton2.Content = "HELLO2";
-            //myButton2.Margin = new Thickness(10);
-            //myButton2.Background = buttonBrush;
-            //stackPanel.Children.Add(myButton2);
+            webView1.NavigationCompleted += WebView1_NavigationCompleted;
+            }
+        private void WebView1_NavigationCompleted(WebView sender,WebViewNavigationCompletedEventArgs args)
+            {
+            webBrush.Redraw();
             }
         }
     }
