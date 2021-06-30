@@ -7,16 +7,40 @@
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Path Stroke="Red" Fill="SaddleBrown">
+    <Path Stroke="Red">
         <Path.Data>
-            <GeometryGroup FillRule="Nonzero">
-                <LineGeometry StartPoint="100,100"
-                              EndPoint="220,10" />
-                <EllipseGeometry Center="100,100"
-                                 RadiusX="50"
-                                 RadiusY="40"/>
-                <RectangleGeometry Rect="120,100,80,20"/>
-            </GeometryGroup>
+            <PathGeometry>
+                <PathFigure StartPoint="20,140">
+                    <BezierSegment Point1="40,160"
+                                   Point2="40,180"
+                                   Point3="20 200" />
+                </PathFigure>
+                <PathFigure StartPoint="40,140">
+                    <LineSegment Point="40,200" />
+                </PathFigure>
+                <PathFigure StartPoint="60,140">
+                    <BezierSegment Point1="40 160"
+                                   Point2="40 180"
+                                   Point3="60 200" />
+                </PathFigure>
+                <PathFigure StartPoint="35,170">
+                    <LineSegment Point="45, 170" />
+                </PathFigure>
+                <PathFigure StartPoint="100 140">
+                    <PolyLineSegment Points="70 140 70 170" />
+                    <PolyLineSegment Points="90 170 70 170 70 200 100 200" />
+                </PathFigure>
+                <PathFigure StartPoint="110 140">
+                    <PolyLineSegment Points="110 200 110 170 140 170 140 140 140 140 140 205" />
+                </PathFigure>
+                <PathFigure StartPoint="180 140"
+                            IsClosed="True">
+                    <ArcSegment Point="180 170"
+                                Size="70 20"
+                                SweepDirection="Counterclockwise" />
+                    <PolyLineSegment Points="160 200 180 170 180 200" />
+                </PathFigure>
+            </PathGeometry>
         </Path.Data>
     </Path>
 </Page>
