@@ -7,6 +7,17 @@
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Polyline Stroke="Red"
-              Points="50,150,150,50,250,150" />
+    <Path Stroke="Red"
+          UseLayoutRounding="False">
+        <Path.Data>
+            <GeometryGroup FillRule="EvenOdd">
+                <LineGeometry StartPoint="100,100"
+                              EndPoint="220,10" />
+                <EllipseGeometry Center="100,100"
+                                 RadiusX="50"
+                                 RadiusY="40" />
+                <RectangleGeometry Rect="120,100,80,20" />
+            </GeometryGroup>
+        </Path.Data>
+    </Path>
 </Page>
