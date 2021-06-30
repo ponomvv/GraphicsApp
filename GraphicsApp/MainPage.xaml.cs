@@ -26,11 +26,6 @@ namespace GraphicsApp
         public MainPage()
             {
             this.InitializeComponent();
-            webView1.NavigationCompleted += WebView1_NavigationCompleted;
-            }
-        private void WebView1_NavigationCompleted(WebView sender,WebViewNavigationCompletedEventArgs args)
-            {
-            webBrush.Redraw();
-            }
+          
         }
     }

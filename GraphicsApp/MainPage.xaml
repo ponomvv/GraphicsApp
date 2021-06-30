@@ -7,23 +7,16 @@
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="grid" Background="White">
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-
-        <WebView x:Name="webView1"
-                 Source="http://msdn.com" />
-
-        <Button Height="300"
-                Width="490"
-                Grid.Row="1"
-                HorizontalAlignment="Center">
-            <Button.Background>
-                <WebViewBrush x:Name="webBrush"
-                              SourceName="webView1" />
-            </Button.Background>
-        </Button>
-    </Grid>
+    <StackPanel Background="White">
+        <Rectangle Fill="LightBlue"
+                   Width="200"
+                   Height="100"
+                   Margin="10" />
+        <Rectangle Fill="LightPink"
+                   Width="200"
+                   Height="100"
+                   RadiusX="20"
+                   RadiusY="20"
+                   Margin="10" />
+    </StackPanel>
 </Page>
