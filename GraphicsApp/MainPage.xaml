@@ -7,9 +7,6 @@
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Line X1="100"
-          Y1="30"
-          X2="200"
-          Y2="150"
-          Stroke="Red" />
+    <Polygon Fill="LightBlue"
+             Points="50,150,150,50,250,150" />
 </Page>
